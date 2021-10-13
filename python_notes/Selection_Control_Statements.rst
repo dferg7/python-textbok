@@ -848,4 +848,4 @@ Answer to exercise 3
         else:
             grade = "E"
 
-    print "%s's grade is %s." % (student_number, grade)
+    print ("%s's grade is %s." % (student_number, grade))
