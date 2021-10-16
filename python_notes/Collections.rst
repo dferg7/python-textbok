@@ -670,7 +670,7 @@ Answer to exercise 1
 
     c[3] = 42
     d.append(10)
-    d.extend([7, 8, 9])
+    c.extend([7, 8, 9])
 
     print(c[:2])
     print(d[-1])
