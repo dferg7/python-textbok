@@ -92,12 +92,12 @@ How do we check whether a list contains a particular value?  We use ``in`` or ``
     numbers = [34, 67, 12, 29]
     my_number = 67
 
-    if number in numbers:
-        print("%d is in the list!" % number)
+    if my_number in numbers:
+        print("%d is in the list!" % my_number)
 
     my_number = 90
-    if number not in numbers:
-        print("%d is not in the list!" % number)
+    if my_number not in numbers:
+        print("%d is not in the list!" % my_number)
 
 .. Note:: ``in`` and ``not in`` fall between the logical operators (``and``, ``or`` and ``not``) and the identity operators (``is`` and ``is not``) in the order of precedence.
 
