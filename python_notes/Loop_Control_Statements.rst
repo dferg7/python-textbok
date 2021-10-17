@@ -572,7 +572,8 @@ Answer to exercise 2
     numbers = []
 
     for i in range(10):
-        numbers[i] = float(input("Please enter number %d: " % (i + 1)))
+        user_input = float(input("Please enter number %d: " % (i + 1)))
+        numbers.append(user_input) 
 
     total = 0
     product = 1
