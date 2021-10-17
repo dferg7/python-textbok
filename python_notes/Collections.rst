@@ -789,4 +789,4 @@ Here is a code example::
         list(range(30, 40)),
     ]
 
-    print(b[0][1:-1])
+    print(b[0][8:])
