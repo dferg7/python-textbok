@@ -353,8 +353,8 @@ Sometimes we can replace inheritance with composition and achieve a similar resu
             self.teacher = teacher
 
     jane = Person("Jane", "Smith", "SMTJNX045", Learner(), Teacher())
-    jane.learner.enrol(a_postgrad_course)
-    jane.teacher.assign_teaching(an_undergrad_course)
+    jane.learner.enrol('a_postgrad_course')
+    jane.teacher.assign_teaching('an_undergrad_course')
 
 Now instead of calling the ``enrol`` and ``assign_teaching`` methods on our person object directly, we *delegate* to the object's ``learner`` and ``teacher`` attributes.
 
