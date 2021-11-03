@@ -186,10 +186,10 @@ Here is a simple example of inheritance::
 
 
     jane = Student(Student.POSTGRADUATE, "Jane", "Smith", "SMTJNX045")
-    jane.enrol(a_postgrad_course)
+    jane.enrol('a_postgrad_course')
 
     bob = Lecturer(StaffMember.PERMANENT, "Bob", "Jones", "123456789")
-    bob.assign_teaching(an_undergrad_course)
+    bob.assign_teaching('an_undergrad_course')
 
 Our base class is ``Person``, which represents any person associated with a university.  We create a subclass to represent students and one to represent staff members, and then a subclass of ``StaffMember`` for people who teach courses (as opposed to staff members who have administrative positions.)
 
