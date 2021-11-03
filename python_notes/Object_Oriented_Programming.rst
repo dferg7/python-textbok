@@ -266,8 +266,8 @@ If we use multiple inheritance, it is often a good idea for us to design our cla
             super(Tutor, self).__init__(*args, **kwargs)
 
     jane = Tutor("Jane", "Smith", "SMTJNX045")
-    jane.enrol(a_postgrad_course)
-    jane.assign_teaching(an_undergrad_course)
+    jane.enrol('a_postgrad_course')
+    jane.assign_teaching('an_undergrad_course')
 
 Now Tutor inherits from one "main" class, ``Person``, and two mix-ins which are not related to ``Person``.  Each mix-in is responsible for providing a specific piece of optional functionality.  Our mix-ins still have ``__init__`` methods, because each one has to initialise a list of courses (we saw in the previous chapter that we can't do this with a class attribute).  Many mix-ins just provide additional methods and don't initialise anything. This sometimes means that they depend on other properties which already exist in the class which inherits from them.
 
